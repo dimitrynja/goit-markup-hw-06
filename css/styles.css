@@ -653,6 +653,7 @@ img {
   height: 581px;
   bottom: 50%;
   left: 50%;
+  padding-top: 40px;
   transform: translate(-50%, 50%);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1) 500ms;
   background-color: var(--primary_color);
@@ -676,4 +677,30 @@ img {
 .close_button {
   width: 18px;
   height: 18px;
+}
+/*-------------------------FORM----------------------------*/
+.form {
+  width: 448px;
+  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title_form {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+}
+.form_field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_field input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
