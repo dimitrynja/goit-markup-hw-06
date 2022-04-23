@@ -418,6 +418,24 @@
             </ul>
           </div>
         </div>
+        <div class="footer_box">
+          <p class="head_soc">Подпишитесь на рассылку</p>
+          <form class="footer_form">
+            <input
+              type="email"
+              name="email"
+              class="footer_form_email"
+              placeholder="E-mail"
+              autocomplete="off"
+            />
+            <button type="submit" class="footer_submit">
+              <span>Подписаться</span>
+              <svg class="submit_icon">
+                <use href="./img/icons.svg#icon-icon_send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is_hidden" data-modal>
@@ -429,35 +447,60 @@
         </button>
         <form class="js_speaker_form form">
           <p class="title_form">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="form_field">
-            <label for="name" class="form_label">Имя</label>
-            <input type="text" name="name" id="name" class="form_input" />
-          </div>
-          <div class="form_field">
-            <label for="tel" class="form_label">Телефон</label>
-            <input type="tel" name="tel" id="tel" class="form_input" />
-          </div>
-          <div class="form_field">
-            <label for="email" class="form_label">Почта</label>
-            <input type="email" name="email" id="email" class="form_input" />
-          </div>
-          <div class="form_field">
-            <label for="comment" class="form_label">Комментарий</label>
+          <label class="form_label">
+            <span class="label_title">Имя</span>
+            <div class="form_input_box">
+              <div class="form_icon_box">
+                <svg class="form_name_icon form_icon">
+                  <use href="./img/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+              <input type="text" name="name" class="form_input" />
+            </div>
+          </label>
+          <label class="form_label">
+            <span class="label_title">Телефон</span>
+            <div class="form_input_box">
+              <div class="form_icon_box">
+                <svg class="form_tel_icon form_icon">
+                  <use href="./img/icons.svg#icon-tel_form"></use>
+                </svg>
+              </div>
+              <input type="tel" name="tel" class="form_input" autocomplete="off" />
+            </div>
+          </label>
+
+          <label class="form_label">
+            <span class="label_title">Почта</span>
+            <div class="form_input_box">
+              <div class="form_icon_box">
+                <svg class="form_email_icon form_icon">
+                  <use href="./img/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+              <input type="email" name="email" class="form_input" autocomplete="off" />
+            </div>
+          </label>
+          <label class="form_label">
+            <span class="label_title">Комментарий</span>
             <textarea
               name="comment"
               id="comment"
               cols="30"
               rows="10"
               placeholder="Введите текст"
-              class="form_input"
+              class="form_input comment"
             ></textarea>
-          </div>
-          <div class="policy">
-            <input type="checkbox" name="policy" id="policy" class="policy_icon" />
-            <label for="policy" class="policy_label"
-              >Соглашаюсь с рассылкой и принимаю <a class="policy_link">Условия договора</a></label
-            >
-          </div>
+          </label>
+          <label class="policy_label">
+            <input type="checkbox" name="policy" class="policy_icon" autocomplete="off" />
+            <svg class="checkbox_icon">
+              <use href="./img/icons.svg#icon-icon_check"></use>
+            </svg>
+            <p class="checkbox_discription">
+              Соглашаюсь с рассылкой и принимаю <a class="policy_link">Условия договора</a>
+            </p>
+          </label>
           <button type="submit" class="form_submit">Отправить</button>
         </form>
       </div>
