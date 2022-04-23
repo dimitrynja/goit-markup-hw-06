@@ -807,6 +807,9 @@ img {
   text-decoration: underline;
   color: rgba(33, 150, 243, 1);
 }
+.policy_link:hover {
+  cursor: pointer;
+}
 .form_input {
   padding-top: 11px;
   padding-bottom: 11px;
